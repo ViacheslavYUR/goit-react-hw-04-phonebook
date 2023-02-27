@@ -1,0 +1,13 @@
+.btn {
+	display: inline-block;
+	padding: 5px 10px;
+	cursor: pointer;
+	/* width: 100px; */
+	border-radius: 5px;
+	border: none;
+}
+
+.contact {
+	display: inline-block;
+	margin-right: 20px;
+}
