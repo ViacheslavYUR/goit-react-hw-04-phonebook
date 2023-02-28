@@ -16,7 +16,6 @@ const App = () => {
 
   useEffect(() => {
     localStorage.setItem('my-contacts', JSON.stringify(contacts));
-    console.log('what I done');
   }, [contacts, filter]);
 
   const addContact = ({ name, number }) => {
@@ -43,7 +42,6 @@ const App = () => {
     });
     return Boolean(findContact);
   };
-  console.log(contacts);
   const removeContact = id => {
     setContacts(prevContacts => {
       return prevContacts.filter(item => item.id !== id);
@@ -176,4 +174,3 @@ export default App;
 //     );
 //   }
 // }
-
